@@ -13,6 +13,7 @@
 ```
 
 [![Go Version](https://img.shields.io/badge/Go-1.25+-blue.svg)](https://go.dev/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mukailasam/snip)](https://goreportcard.com/report/github.com/mukailasam/snip)
 
 Snip is a command-line tool that lets you download a specific folder or file from a GitHub repository without cloning the entire project.
@@ -84,6 +85,20 @@ $env:GITHUB_TOKEN = "ghp_xxxxxxxxx"
 ```
 
 Snip automatically detects your token and uses it for private repo access.
+
+## Flags
+
+Snip commands accept the following flags:
+
+```text
+| Flag       | Description                                                  | Example              |
+|------------|--------------------------------------------------------------|----------------------|
+| `--dir`    | Name of the directory to snip from the repo                  | `--dir cmd`          |
+| `--file`   | Name of the file to snip from the repo.                      | `--file go.mod`      |
+| `--branch` | Branch to use (optional).                                    | `--branch main`      |
+| `--dest`   | Destination directory to save downloaded content (optional). | `--dest ./downloads` |
+
+```
 
 ## Project Structure
 
